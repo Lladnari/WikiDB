@@ -1,0 +1,14 @@
+// oListsData.sDayName = asDayName[dToday.getDay()];
+/* let oDateFormat = {
+   weekday: "long",
+   year: 'numeric',
+   month: 'numeric',
+   day: 'numeric',
+   hour: 'numeric',
+   minute: 'numeric',
+   // second: 'numeric',
+   hour12: false,
+   // timeZone: '',
+   // timeZoneName: '',
+}
+// oListsData.sDayName = dToday.toLocaleString('default', oDateFormat); /* d */

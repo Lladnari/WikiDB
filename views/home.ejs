@@ -1,0 +1,19 @@
+
+<%- include("partials/header"); -%>
+    <h1>Home<%let iMax = 20; %></h1>
+    <p> <%= startingContent %> </p>
+
+
+  <%  posts.forEach(function(oPost){ %>
+
+    <h1><%=oPost.sTitle%> <small>on <%=oPost.sDate%> (<%=oPost.iLength%>) (...<%=oPost._id.toString().slice(-3)%>)</small></h1>
+    <p>
+       <%=(oPost.iLength > iMax) ? oPost.sContent.slice(0, iMax-3) + '...' : oPost.sContent;%>
+       <a href="/posts/<%=oPost._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>
